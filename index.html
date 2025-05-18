@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Comunidad XYZ</title>
+    <meta name="description" content="Información en tiempo real sobre la ubicación del camión de gas en nuestra comunidad">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gas-pump"></i>
+                <h1>GasComunidad</h1>
+            </div>
+        </header>
+
+        <main>
+            <!-- ESTADO ACTUAL - EDITAR MANUALMENTE -->
+            <div id="statusCard" class="status-card present">
+                <div class="status-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 class="status-title">¡El camión está disponible!</h2>
+                <p>Puedes acudir a surtir gas en este momento</p>
+                
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <strong>Ubicación actual:</strong>
+                            <p id="ubicacionTexto">Plaza principal, frente a la tienda de abarrotes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <strong>Horario de hoy:</strong>
+                            <p id="horarioTexto">9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div>
+                            <strong>Fecha:</strong>
+                            <p id="fechaTexto">20 de Mayo, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i> Mapa de ubicación
+                </div>
+            </div>
+            
+            <div class="update-info">
+                <i class="fas fa-sync-alt"></i> La información se actualiza cada 5 minutos
+                <br>
+                <span id="lastUpdate">Última actualización: 20/05/2024 10:15 AM</span>
+            </div>
+        </main>
+
+        <footer>
+            <p>Servicio proporcionado para la comunidad | Contacto: admin@tucomunidad.com</p>
+            <p>© 2024 GasComunidad - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
