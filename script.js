@@ -1,6 +1,6 @@
 // Configuración que puedes editar fácilmente
 const config = {
-    presente: false,  // Cambiar a false cuando no esté
+    presente: true,  // Cambiar a false cuando no esté
     ubicacion: "Plaza principal, frente a la tienda de abarrotes",
     horario: "9:00 AM - 5:00 PM",
     fecha: "20 de Mayo, 2025",
