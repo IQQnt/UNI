@@ -53,3 +53,18 @@ function actualizarVista() {
 
 // Inicializar cuando el DOM esté cargado
 document.addEventListener('DOMContentLoaded', actualizarVista);
+
+// Solución simple para evitar cache
+console.log("Versión actual:", config.version);
+
+// Forzar recarga si la página tiene más de 5 minutos
+const pageLoadTime = new Date();
+setInterval(() => {
+    if (new Date() - pageLoadTime > 5 * 60 * 1000) {
+        window.location.reload(true);
+    }
+}, 60 * 1000);
+
+
+
+
