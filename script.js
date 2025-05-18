@@ -1,11 +1,11 @@
 // Configuración editable - CAMBIA ESTOS VALORES
 const config = {
-    presente: true,  // true si está, false si no
+    presente: false,  // true si está, false si no
     ubicacion: "Plaza principal",
     horario: "9:00 AM - 5:00 PM",
     fecha: "21 de Mayo, 2024",
     ultimaActualizacion: "21/05/2024 09:30 AM",
-    version: "1.0.1"  // Aumenta este número con cada actualización
+    version: "1.0.2"  // Aumenta este número con cada actualización
 };
 
 // Función para actualizar la vista
