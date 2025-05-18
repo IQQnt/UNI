@@ -1,6 +1,6 @@
 // Configuración editable - CAMBIA ESTOS VALORES
 const config = {
-    presente: false,  // true si está, false si no
+    presente: true,  // true si está, false si no
     ubicacion: "Plaza principal",
     horario: "9:00 AM - 5:00 PM",
     fecha: "21 de Mayo, 2024",
