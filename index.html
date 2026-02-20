@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <title>Educación sobre Phishing | Protégete Online</title>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <span class="material-icons text-primary text-3xl">security</span>
+                    <span
+                        class="text-xl font-bold tracking-tight text-slate-900 dark:text-white uppercase italic">Shield<span
+                            class="text-primary italic">Edu</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#inicio">Inicio</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#conceptos">Conceptos</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#alertas">Señales</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#consejos">Protección</a>
+                    <a class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20"
+                        href="#">Reportar Incidente</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4" id="inicio">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                    <span class="material-icons text-sm">verified_user</span>
+                    Ciberseguridad para todos
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                    ¿Qué es el Phishing y <span class="text-primary">cómo protegerte?</span>
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+                    El phishing es el método más común de estafa digital. Aprende a identificar las tácticas de los
+                    ciberdelincuentes y blinda tu identidad digital con pasos sencillos y efectivos.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:translate-y-[-2px] transition-all shadow-xl shadow-primary/30"
+                        href="#conceptos">
+                        Comenzar Guía
+                    </a>
+                    <button
+                        class="flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg border-2 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
+                        <span class="material-icons">play_circle</span>
+                        Ver Video
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-primary/10 rounded-full blur-3xl"></div>
+                <img alt="Cybersecurity illustration"
+                    class="relative w-full h-auto rounded-2xl shadow-2xl border border-white/20"
+                    data-alt="Digital shield and security padlock illustration"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVWWsKq_mYe6xFYVI2JI68nFCpemQx6H08i2XvJ8DeARRkuHxaUyfuNfa7rQe_COQgNkvTckMN9d9UFnC1LDRlNafDLjL640NdfDPU6M11k58JhILGocsjuOMj6wAxZryIXPUuPBAcwVq9fLNhBNrUbxT209wbLN5UvfrmsJJCMpADskrLZoZbJgtu9dZxhmXVKKJcV1h7kDXb31X5BAQTX4w1eMCtkSzvFerC5Vv05rlGDpj7FBredU6-LazNJYlRx3JI9ZulHd6P" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Definition Section -->
+    <section class="py-24 bg-white dark:bg-background-dark/50" id="conceptos">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12">Aprendiendo lo básico</h2>
+            <div
+                class="bg-background-light dark:bg-background-dark p-10 lg:p-16 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800 relative overflow-hidden group">
+                <div
+                    class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110">
+                </div>
+                <span class="material-icons text-6xl text-primary mb-6">psychology</span>
+                <h3 class="text-2xl font-bold mb-6 text-slate-900 dark:text-white italic">Una técnica de Ingeniería
+                    Social</h3>
+                <p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-light italic">
+                    "El <span class="text-primary font-semibold">phishing</span> es un método que los ciberdelincuentes
+                    utilizan para engañarte y revelar información personal, como contraseñas o datos de tarjetas de
+                    crédito, haciéndose pasar por una entidad de confianza en una comunicación electrónica."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warning Signals Grid -->
+    <section class="py-24 px-4" id="alertas">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Señales de Alerta</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Si notas alguna de estas características en un mensaje,
+                    detente. Es muy probable que sea un intento de estafa.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="group p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-icons text-orange-600 dark:text-orange-400 text-3xl">spellcheck</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Errores Gramaticales</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Mala redacción, faltas de ortografía o saludos
+                        genéricos como "Estimado cliente".</p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="group p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-icons text-red-600 dark:text-red-400 text-3xl">priority_high</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Urgencia Artificial</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Mensajes que te presionan a actuar de inmediato
+                        amenazando con cerrar tu cuenta.</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="group p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-icons text-primary text-3xl">link_off</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Enlaces Sospechosos</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">URLs que parecen oficiales pero tienen caracteres
+                        extraños o dominios incorrectos.</p>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="group p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span
+                            class="material-icons text-emerald-600 dark:text-emerald-400 text-3xl">person_search</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Remitentes Extraños</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">La dirección de correo electrónico no coincide con
+                        el nombre de la empresa oficial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-24 bg-slate-50 dark:bg-background-dark" id="consejos">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-extrabold mb-8">Guía de <span class="text-primary">Protección</span></h2>
+                    <div class="space-y-8">
+                        <!-- Step 1 -->
+                        <div class="flex gap-6">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shadow-lg shadow-primary/30">
+                                1</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Verifica la URL</h4>
+                                <p class="text-slate-500">Pasa el ratón sobre el enlace antes de hacer clic para ver la
+                                    dirección real. Asegúrate de que use HTTPS.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex gap-6">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shadow-lg shadow-primary/30">
+                                2</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Activa el 2FA</h4>
+                                <p class="text-slate-500">Usa la autenticación de dos factores en todas tus cuentas. Es
+                                    la barrera más efectiva contra el robo de identidad.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex gap-6">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shadow-lg shadow-primary/30">
+                                3</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Reporta y Elimina</h4>
+                                <p class="text-slate-500">Si sospechas de un correo, márcalo como spam y repórtalo a tu
+                                    departamento de IT o a la entidad suplantada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div
+                        class="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800">
+                        <div class="flex items-center gap-3 mb-6 border-b border-slate-100 dark:border-slate-800 pb-4">
+                            <div class="flex gap-1.5">
+                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                            </div>
+                            <div
+                                class="bg-slate-100 dark:bg-slate-800 px-4 py-1 rounded text-xs text-slate-400 flex-grow text-center">
+                                https://banco-seguro-verificar.com/login</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-8 bg-slate-50 dark:bg-slate-800 rounded w-1/3"></div>
+                            <div class="h-12 bg-slate-100 dark:bg-slate-800 rounded w-full border-2 border-primary/20">
+                            </div>
+                            <div class="h-8 bg-slate-50 dark:bg-slate-800 rounded w-1/4"></div>
+                            <div class="h-12 bg-slate-100 dark:bg-slate-800 rounded w-full border-2 border-primary/20">
+                            </div>
+                            <div
+                                class="h-14 bg-primary rounded-xl w-full flex items-center justify-center text-white font-bold text-lg">
+                                Iniciar Sesión
+                            </div>
+                            <div class="text-center pt-4">
+                                <span
+                                    class="text-xs text-red-500 font-medium bg-red-50 dark:bg-red-900/20 px-3 py-1 rounded-full uppercase tracking-tighter">¡Advertencia!
+                                    El dominio no coincide con el oficial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2 space-y-6">
+                    <div class="flex items-center gap-2">
+                        <span class="material-icons text-primary text-3xl">security</span>
+                        <span
+                            class="text-xl font-bold tracking-tight text-slate-900 dark:text-white uppercase italic">Shield<span
+                                class="text-primary italic">Edu</span></span>
+                    </div>
+                    <p class="text-slate-500 max-w-sm">Nuestra misión es educar a un millón de personas sobre las
+                        amenazas digitales y cómo navegar de forma segura en internet.</p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#"><span class="material-icons text-sm">facebook</span></a>
+                        <a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#"><span class="material-icons text-sm">alternate_email</span></a>
+                        <a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#"><span class="material-icons text-sm">language</span></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Recursos</h5>
+                    <ul class="space-y-4 text-slate-500">
+                        <li><a class="hover:text-primary transition-colors" href="#">Guía PDF</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Webinars</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Blog de Seguridad</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Herramientas Gratuitas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Soporte</h5>
+                    <ul class="space-y-4 text-slate-500">
+                        <li><a class="hover:text-primary transition-colors" href="#">Centro de Ayuda</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Reportar Phishing</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Contacto</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-slate-100 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm italic">© 2024 ShieldEdu Cybersecurity Education. Todos los derechos
+                    reservados.</p>
+                <div class="flex gap-8 text-sm text-slate-400 font-medium italic">
+                    <a class="hover:text-primary" href="#">Términos</a>
+                    <a class="hover:text-primary" href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
