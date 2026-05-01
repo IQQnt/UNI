@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Digital El Bosque | Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#132e35',
+                            900: '#0d1f23',
+                        },
+                        trust: '#2d4a53',
+                        muted: '#69818d',
+                        pearl: '#afb3b7',
+                        bone: '#F9FAFB',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+        body { font-family: 'Outfit', sans-serif; }
+    </style>
+</head>
+<body class="bg-bone text-gray-800">
+
+    <!-- Navegación Fija -->
+    <nav class="bg-navy-800 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold flex items-center gap-2">
+                <span class="text-2xl">🛡️</span> 
+                <span class="hidden sm:inline">Seguridad Digital El Bosque</span>
+                <span class="sm:hidden text-sm">Seguridad Digital</span>
+            </a>
+            
+            <!-- Menú Desktop -->
+            <div class="hidden lg:flex space-x-6 font-medium">
+                <a href="index.html" class="text-white border-b-2 border-white pb-1">Inicio</a>
+                <a href="phishing.html" class="hover:text-pearl transition">¿Qué es?</a>
+                <a href="ejemplos.html" class="hover:text-pearl transition">Ejemplos</a>
+                <a href="prevenir.html" class="hover:text-pearl transition">Cómo prevenir</a>
+                <a href="recursos.html" class="hover:text-pearl transition">Recursos</a>
+            </div>
+
+            <!-- Botón Hamburguesa -->
+            <button id="menu-btn" class="lg:hidden p-2 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 px-4 py-6 space-y-4 border-t border-gray-700">
+            <a href="index.html" class="block text-lg font-bold text-white">Inicio</a>
+            <a href="phishing.html" class="block text-lg text-gray-300">¿Qué es phishing?</a>
+            <a href="ejemplos.html" class="block text-lg text-gray-300">Ejemplos reales</a>
+            <a href="prevenir.html" class="block text-lg text-gray-300">Pasos para prevenir</a>
+            <a href="recursos.html" class="block text-lg text-gray-300">Recursos útiles</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-white border-b border-pearl">
+        <div class="max-w-6xl mx-auto px-4 py-16 lg:py-24 flex flex-col items-start">
+            <h1 class="text-4xl lg:text-6xl font-bold text-navy-900 leading-tight mb-6">
+                Cuida tu seguridad digital: <br>
+                <span class="text-trust">Aprende a identificar y evitar el phishing</span>
+            </h1>
+            <p class="text-xl lg:text-2xl text-muted mb-8 max-w-3xl">
+                Información clara y práctica para los residentes de la 
+                <span class="font-bold text-navy-800">Urbanización El Bosque</span>, Cumaná, Estado Sucre.
+            </p>
+            <a href="phishing.html" class="w-full sm:w-auto bg-trust hover:bg-navy-800 text-white text-xl font-bold py-5 px-10 rounded-lg shadow-lg transition transform active:scale-95 text-center">
+                📖 Comienza a aprender aquí
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Introductoria -->
+    <main class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl font-bold text-navy-900 mb-8">¿Por qué es importante este proyecto?</h2>
+        <div class="space-y-6 text-lg leading-relaxed text-gray-700">
+            <p>
+                Somos estudiantes de la <strong>Universidad Politécnica Territorial del Oeste de Sucre "Clodosbaldo Russián" (UPTOS)</strong>. Como parte de nuestro proyecto comunitario, queremos ayudarte a navegar por internet sin miedo.
+            </p>
+            <p>
+                En Venezuela, los intentos de estafa a través de WhatsApp y correos electrónicos han aumentado. Muchos de nuestros vecinos han sido víctimas de engaños que buscan robar su dinero o sus contactos.
+            </p>
+            <p>
+                Este sitio web ha sido creado para darte las herramientas necesarias para detectar estos engaños a tiempo. La seguridad digital no es solo para expertos; es para todos nosotros.
+            </p>
+        </div>
+    </main>
+
+    <!-- Tarjetas de Resumen -->
+    <section class="bg-gray-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
+                <div class="text-4xl mb-4">🎣</div>
+                <h3 class="text-2xl font-bold text-navy-900 mb-4">¿Qué es?</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">Entiende de forma sencilla cómo funcionan estas estafas digitales que parecen "pescar" tus datos.</p>
+                <a href="phishing.html" class="text-trust font-bold hover:underline">Saber más &rarr;</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
+                <div class="text-4xl mb-4">📱</div>
+                <h3 class="text-2xl font-bold text-navy-900 mb-4">Ejemplos Reales</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">Mira cómo se ven los mensajes falsos de bancos y familiares que circulan en Venezuela.</p>
+                <a href="ejemplos.html" class="text-trust font-bold hover:underline">Ver ejemplos &rarr;</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
+                <div class="text-4xl mb-4">🛡️</div>
+                <h3 class="text-2xl font-bold text-navy-900 mb-4">Cómo Prevenir</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">Sigue 7 pasos prácticos para convertirte en un experto en seguridad digital.</p>
+                <a href="prevenir.html" class="text-trust font-bold hover:underline">Aprender pasos &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white py-12 px-4 mt-16 border-t-4 border-pearl">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h4 class="text-xl font-bold mb-4 italic text-pearl">UPTOS "Clodosbaldo Russián"</h4>
+                <p class="text-gray-400 mb-4">Programa Nacional de Formación (PNF) en Informática</p>
+                <p class="text-gray-400">Cumaná, Estado Sucre, Venezuela | 2025</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-4 italic text-pearl">Equipo de Proyecto</h4>
+                <ul class="text-gray-400 space-y-1">
+                    <li>Sharon Asaeda</li>
+                    <li>Zobeida Nahhas</li>
+                    <li>Fabián Aparicio</li>
+                    <li>Sair Espín</li>
+                </ul>
+                <p class="mt-6 text-sm text-gray-500">
+                    Proyecto comunitario diseñado para la Urbanización El Bosque.
+                </p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            &copy; <span id="current-year"></span> Seguridad Digital El Bosque. Información con fines educativos.
+        </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button id="back-to-top" class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl transition hover:bg-navy-800 z-40">
+        ⬆️
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

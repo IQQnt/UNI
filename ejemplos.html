@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Phishing | Seguridad Digital El Bosque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 800: '#132e35', 900: '#0d1f23' },
+                        trust: '#2d4a53',
+                        muted: '#69818d',
+                        pearl: '#afb3b7',
+                        bone: '#F9FAFB',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+        body { font-family: 'Outfit', sans-serif; }
+    </style>
+</head>
+<body class="bg-bone text-gray-800">
+
+    <!-- Navegación Fija -->
+    <nav class="bg-navy-800 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold flex items-center gap-2">
+                🛡️ <span class="hidden sm:inline">Seguridad Digital El Bosque</span>
+            </a>
+            <button id="menu-btn" class="lg:hidden p-2 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <div class="hidden lg:flex space-x-6 font-medium">
+                <a href="index.html" class="hover:text-pearl transition">Inicio</a>
+                <a href="phishing.html" class="hover:text-pearl transition">¿Qué es?</a>
+                <a href="ejemplos.html" class="text-white border-b-2 border-white pb-1">Ejemplos</a>
+                <a href="prevenir.html" class="hover:text-pearl transition">Cómo prevenir</a>
+                <a href="recursos.html" class="hover:text-pearl transition">Recursos</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 px-4 py-6 border-t border-gray-700">
+            <a href="index.html" class="block py-2 text-gray-300">Inicio</a>
+            <a href="phishing.html" class="block py-2 text-gray-300">¿Qué es phishing?</a>
+            <a href="ejemplos.html" class="block py-2 text-white font-bold">Ejemplos reales</a>
+            <a href="prevenir.html" class="block py-2 text-gray-300">Pasos para prevenir</a>
+            <a href="recursos.html" class="block py-2 text-gray-300">Recursos útiles</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 lg:py-20">
+        <header class="mb-16 text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl lg:text-5xl font-bold text-navy-900 mb-6">
+                Así te pueden estafar: <br>
+                <span class="text-trust">Ejemplos reales en Venezuela</span>
+            </h1>
+            <p class="text-xl text-muted">Aprender a reconocer estos mensajes te salvará de muchos problemas. Analicemos cómo intentan engañarnos.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+            
+            <!-- Ejemplo 1: Banco -->
+            <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-pearl">
+                <div class="bg-blue-600 text-white p-4 font-bold">💬 WhatsApp del "Banco"</div>
+                <div class="p-8">
+                    <div class="bg-gray-100 p-4 rounded-lg italic text-gray-700 mb-6 border-l-4 border-blue-500">
+                        "Estimado cliente, su cuenta ha sido suspendida por seguridad. Ingrese a www.banco-ve-seguro.com para reactivarla ahora mismo."
+                    </div>
+                    <h3 class="font-bold text-navy-900 mb-4">🔐 Identifica el engaño:</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">✅ El enlace no es el oficial del banco.</li>
+                        <li class="flex items-start gap-2">✅ Usa el miedo para que actúes rápido.</li>
+                        <li class="flex items-start gap-2">✅ Los bancos no piden datos por WhatsApp.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Ejemplo 2: MercadoLibre -->
+            <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-pearl">
+                <div class="bg-yellow-500 text-navy-900 p-4 font-bold">📧 Correo de MercadoLibre</div>
+                <div class="p-8">
+                    <div class="bg-gray-100 p-4 rounded-lg italic text-gray-700 mb-6 border-l-4 border-yellow-500">
+                        "¡Felicidades! Ganaste un iPhone 15 por ser un usuario destacado. Paga solo el envío aquí: bit.ly/premio-ya"
+                    </div>
+                    <h3 class="font-bold text-navy-900 mb-4">🔐 Identifica el engaño:</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">✅ Nadie regala celulares así de fácil.</li>
+                        <li class="flex items-start gap-2">✅ El enlace está acortado (oculta el destino).</li>
+                        <li class="flex items-start gap-2">✅ Te piden pagar algo de inmediato.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Ejemplo 3: CANTV -->
+            <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-pearl">
+                <div class="bg-red-700 text-white p-4 font-bold">📞 Llamada de "Cantv"</div>
+                <div class="p-8">
+                    <div class="bg-gray-100 p-4 rounded-lg italic text-gray-700 mb-6 border-l-4 border-red-700">
+                        "Le hablamos de Cantv. Para evitar el corte de su servicio de internet, por favor dígame el código que le llegó a su celular por SMS."
+                    </div>
+                    <h3 class="font-bold text-navy-900 mb-4">🔐 Identifica el engaño:</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">✅ Te piden un código SMS (es para robar tu cuenta).</li>
+                        <li class="flex items-start gap-2">✅ Te amenazan con cortar el servicio.</li>
+                        <li class="flex items-start gap-2">✅ Las operadoras no piden códigos privados.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Ejemplo 4: Familiar -->
+            <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-pearl">
+                <div class="bg-green-600 text-white p-4 font-bold">👪 El "Familiar" en apuros</div>
+                <div class="p-8">
+                    <div class="bg-gray-100 p-4 rounded-lg italic text-gray-700 mb-6 border-l-4 border-green-600">
+                        "Hola tío, soy yo. Cambié de número. Estoy en el aeropuerto y mi maleta está retenida, ¿me puedes prestar 50$ para pagar la multa?"
+                    </div>
+                    <h3 class="font-bold text-navy-900 mb-4">🔐 Identifica el engaño:</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">✅ Un número nuevo que no conoces.</li>
+                        <li class="flex items-start gap-2">✅ Pide dinero con una historia urgente.</li>
+                        <li class="flex items-start gap-2">✅ ¡Llama a tu sobrino al número de siempre!</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="text-center">
+            <a href="prevenir.html" class="inline-block bg-trust text-white text-xl font-bold py-5 px-12 rounded-full shadow-xl transition transform hover:scale-105 active:scale-95">
+                Aprende cómo prevenir esto &rarr;
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white py-12 px-4 border-t-4 border-pearl mt-12">
+        <div class="max-w-6xl mx-auto text-center text-gray-400 text-sm">
+            <p class="mb-2">UPTOS "Clodosbaldo Russián" | Proyecto El Bosque</p>
+            <p>&copy; <span id="current-year"></span> Seguridad Digital El Bosque</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl z-40">⬆️</button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
