@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Útiles | Seguridad Digital El Bosque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 800: '#132e35', 900: '#0d1f23' },
+                        trust: '#2d4a53',
+                        muted: '#69818d',
+                        pearl: '#afb3b7',
+                        bone: '#F9FAFB',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-bone text-gray-800">
+
+    <!-- Navegación Fija -->
+    <nav class="bg-navy-800 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold flex items-center gap-2">
+                🛡️ <span class="hidden sm:inline">Seguridad Digital El Bosque</span>
+            </a>
+            <button id="menu-btn" class="lg:hidden p-2 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div class="hidden lg:flex space-x-6 font-medium">
+                <a href="index.html" class="hover:text-pearl transition">Inicio</a>
+                <a href="phishing.html" class="hover:text-pearl transition">¿Qué es?</a>
+                <a href="ejemplos.html" class="hover:text-pearl transition">Ejemplos</a>
+                <a href="prevenir.html" class="hover:text-pearl transition">Cómo prevenir</a>
+                <a href="recursos.html" class="text-white border-b-2 border-white pb-1">Recursos</a>
+            </div>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 px-4 py-6 border-t border-gray-700">
+            <a href="index.html" class="block py-2 text-gray-300">Inicio</a>
+            <a href="phishing.html" class="block py-2 text-gray-300">¿Qué es phishing?</a>
+            <a href="ejemplos.html" class="block py-2 text-gray-300">Ejemplos reales</a>
+            <a href="prevenir.html" class="block py-2 text-gray-300">Pasos para prevenir</a>
+            <a href="recursos.html" class="block py-2 text-white font-bold">Recursos útiles</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 lg:py-20">
+        <header class="mb-16 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-navy-900 mb-6">
+                Más herramientas para mantenerte seguro
+            </h1>
+            <p class="text-xl text-muted max-w-2xl mx-auto">Aquí encontrarás enlaces oficiales y material que puedes
+                descargar y compartir.</p>
+        </header>
+
+        <!-- Enlaces de Interés -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-navy-800 mb-8 border-b-2 border-pearl pb-2 inline-block">🔗 Enlaces de
+                interés</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
+                <a href="#"
+                    class="bg-white p-8 rounded-xl shadow-sm border border-pearl hover:shadow-md transition group">
+                    <h3 class="text-xl font-bold text-navy-900 group-hover:text-trust mb-3">CICPC Delitos Informáticos
+                    </h3>
+                    <p class="text-gray-600 mb-4">Información oficial sobre cómo denunciar estafas y delitos en
+                        Venezuela.</p>
+                    <span class="text-trust font-bold">Ir al sitio &rarr;</span>
+                </a>
+                <a href="#"
+                    class="bg-white p-8 rounded-xl shadow-sm border border-pearl hover:shadow-md transition group">
+                    <h3 class="text-xl font-bold text-navy-900 group-hover:text-trust mb-3">BCV Alertas de Fraude</h3>
+                    <p class="text-gray-600 mb-4">Comunicados del Banco Central de Venezuela sobre seguridad financiera.
+                    </p>
+                    <span class="text-trust font-bold">Ir al sitio &rarr;</span>
+                </a>
+                <a href="#"
+                    class="bg-white p-8 rounded-xl shadow-sm border border-pearl hover:shadow-md transition group">
+                    <h3 class="text-xl font-bold text-navy-900 group-hover:text-trust mb-3">Video Educativo</h3>
+                    <p class="text-gray-600 mb-4">Un video sencillo que explica cómo cuidar tus claves de WhatsApp.</p>
+                    <span class="text-trust font-bold">Ver video &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Materiales Descargables -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-navy-800 mb-8 border-b-2 border-pearl pb-2 inline-block">📥 Materiales
+                para compartir</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+
+                <!-- Tarjeta 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-pearl flex flex-col">
+                    <img src="downloads/infografia-anzuelo.png" alt="Infografía: El anzuelo que no ves" class="w-full aspect-video object-cover bg-gray-200">
+
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Infografía: El anzuelo que no ves</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">Identifica correos y mensajes engañosos de forma
+                            visual.</p>
+                        <a href="downloads/infografia-anzuelo.png" download="infografia-anzuelo.png"
+                            class="w-full bg-trust text-white text-center font-bold py-3 rounded-lg hover:bg-navy-800 transition">
+                            📥 Descargar PNG
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-pearl flex flex-col">
+                    <img src="downloads/infografia-minuto.png" alt="Infografía: El minuto que salva tus cuentas" class="w-full aspect-video object-cover bg-gray-200">
+
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Infografía: El minuto que salva tus cuentas
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">Pasos rápidos para verificar la seguridad de tus
+                            enlaces.</p>
+                        <a href="downloads/infografia-minuto.png" download="infografia-minuto.png"
+                            class="w-full bg-trust text-white text-center font-bold py-3 rounded-lg hover:bg-navy-800 transition">
+                            📥 Descargar PNG
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-pearl flex flex-col">
+                    <img src="downloads/infografia-navegar.png" alt="Infografía: Navega sin miedo" class="w-full aspect-video object-cover bg-gray-200">
+
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Infografía: Navega sin miedo</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">Consejos prácticos para una navegación segura en
+                            internet.</p>
+                        <a href="downloads/infografia-navegar.png" download="infografia-navegar.png"
+                            class="w-full bg-trust text-white text-center font-bold py-3 rounded-lg hover:bg-navy-800 transition">
+                            📥 Descargar PNG
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mensaje Adicional -->
+            <div class="mt-8 text-center">
+                <p class="text-muted text-sm italic">
+                    💡 Las infografías están en formato PNG. Puedes imprimirlas, compartirlas por WhatsApp o guardarlas
+                    en tu teléfono.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mensaje Final -->
+        <div class="bg-white border-4 border-dashed border-pearl p-12 rounded-3xl text-center">
+            <p class="text-2xl text-navy-800 font-bold italic mb-4">
+                "📢 Próximamente más recursos. ¡Comparte esta página con tu familia y vecinos!"
+            </p>
+            <p class="text-muted">Juntos podemos hacer de la Urbanización El Bosque un lugar digital más seguro.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white py-12 px-4 border-t-4 border-pearl mt-12 text-center text-gray-400 text-sm">
+        <p>&copy; <span id="current-year"></span> Seguridad Digital El Bosque</p>
+    </footer>
+
+    <button id="back-to-top"
+        class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl z-40">⬆️</button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
